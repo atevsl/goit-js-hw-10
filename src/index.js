@@ -59,7 +59,7 @@ function countryInfoMarkUp(data) {
 
 function countryListMarkUp(data) {
   const markUp = data.map(({ name: { official }, flags: { svg } }) => {
-    return `<li><img src=${svg}></img>${official}</li>`;
+    return `<li><img src=${svg} width='50'></img>${official}</li>`;
   });
   countryListEll.innerHTML = markUp.join('');
 }
